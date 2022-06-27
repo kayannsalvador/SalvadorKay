@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(151, 88, 168), rgb(143, 89, 168));
+}
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    background-color: #F2D1D1;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Card Style */
+.card {
+    background-color: #F2D1D1;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 95%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Navigation Style */
+.container {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lead {
+    font-family: 'Quicksand';
+}
+
+.header-bar {
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    height: 50px;
+    border: 10px solid transparent;
+    border-top: 10px solid #FFE6E6;
+    border-left: 10px solid #FFE6E6;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.header-bar::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30%;
+    height: 49px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #FFE6E6;
+    border-right: 10px solid #FFE6E6;
+    transition: 0.3s linear all;
+}
+
+.slider-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.slider-menu>li a {
+    display: inline-flex;
+    padding: 14px;
+    margin-left: 2px;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear all;
+    user-select: none;
+    text-decoration: none;
+}
+
+.slider-menu>li a:hover {
+    color: #faa;
+    box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* End of Navigation Style */
+
+/* Style for About Form */
+.img-me {
+    width: 15%;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #AC7D88;
+    margin: 2ch 2ch;
+    padding: 5px 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 580px) {
+    .img-me {
+        -ms-flex: 70%;
+        flex: 70%;
+        width: 30%;
+        height: fixed;
+        padding: 5px 5px;
+        margin: 2ch 2ch;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* End of About Column */
+
+/* Portfolio Column */
+
+div.gallery:hover {
+    border: 2px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 30%;
+    margin-bottom: 2ch;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* End of Portfolio Column */
+
+/* Contact Column */
+
+image {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+/* End of Contact Column */
+
+/* Style for social media account */
+.fa {
+    padding: 1px;
+    font-size: 20px;
+    width: 10%;
+    text-decoration: none;
+    color: #734046;
+}
+
+.a {
+    width: 10%;
+    text-decoration: none;
+    color: #734046
+}
+
+.fa:hover {
+    color: black;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(151, 88, 168), rgb(143, 89, 168));
+    color: #f1f1f1;
+    font-family: 'Quicksand', sans-serif;
+}
